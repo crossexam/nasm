@@ -3,7 +3,11 @@
 ; Original code: https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm 
 ; To assemble and run:
 ;
-;     nasm -felf hello-ver2.asm && ld -m elf_i386 -s -o hello-ver2 hello-ver2.o && ./hello-ver2
+;     nasm -felf hello-ver2.asm && ld -m elf_i386 -s -o hello-ver2.out hello-ver2.o && ./hello-ver2.out
+; To disassemble:
+;     ndisasm -e -b 32 hello-ver2.out
+; Or you can generate listing files instead
+; Source: https://stackoverflow.com/a/44841942/10671200
 ; ----------------------------------------------------------------------------------------
 
 section	.text

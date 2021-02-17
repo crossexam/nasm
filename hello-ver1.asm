@@ -2,8 +2,11 @@
 ; It is 64 bit version, run on Linux only 
 ; Original code: https://cs.lmu.edu/~ray/notes/nasmtutorial/
 ; To assemble and run:
-;
 ;     nasm -felf64 hello-ver1.asm && ld hello-ver1.o && ./a.out
+; To disassemble:
+;     ndisasm -e -b 64 hello-ver1
+; Or you can generate listing files instead
+; Source: https://stackoverflow.com/a/44841942/10671200
 ; ----------------------------------------------------------------------------------------
 
           global    _start
